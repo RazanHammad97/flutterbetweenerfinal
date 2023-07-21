@@ -32,7 +32,7 @@ class LoginView extends StatelessWidget {
           "LOGIN",
           onPressed: () {},
         ),
-        const CustomText(title: "-  or  -", topPadding: 24),
+         CustomText(title: "-  or  -", topPadding: 24),
         CustomSocialButton(
           title: "Sign In With Google".toUpperCase(),
           color: Colors.red,
