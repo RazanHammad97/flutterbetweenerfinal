@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
-
+import 'package:projectbetweener/auth/login_view.dart';
+import 'package:projectbetweener/auth/on_boarding.dart';
+import 'package:projectbetweener/core/util/general_services.dart';
 import 'auth/register_view.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,21 +15,29 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Betweener App',
-      theme: ThemeData(
-        elevatedButtonTheme: ElevatedButtonThemeData(
-            style: ButtonStyle(backgroundColor: MaterialStateProperty.all<Color>(Color(0xFFD465)))),
-        scaffoldBackgroundColor: Colors.white,
-        // colorScheme: ColorScheme.fromSeed(seedColor: Colors.white),
-        useMaterial3: true,
-      ),
-      home: const RegisterView(),
-      routes: {
-        RegisterView.id :(context) =>const RegisterView(),
+    ScreenUtil.init(context, designSize: const Size(360, 800));
+    return ScreenUtilInit(
+      designSize: const Size(360, 800),
+      minTextAdapt: true,
+      splitScreenMode: true,
+      builder: (context, child) {
+        return MaterialApp(
+          debugShowCheckedModeBanner: false,
+          title: 'Betweener App',
+          // You can use the library anywhere in the app even in theme
+          theme: ThemeData(
+            primarySwatch: GeneralServices().buildMaterialColor(Color(0xFFD4650F)),
+            textTheme: Typography.englishLike2018.apply(fontSizeFactor: 1.sp),
+            scaffoldBackgroundColor: Colors.white,
+          ),
+          home: const OnBoradingView(),
+          routes: {
+            RegisterView.id: (context) => const RegisterView(),
+            LoginView.id: (context) => const LoginView(),
+            OnBoradingView.id: (context) => const OnBoradingView(),
+          },
+        );
       },
     );
   }
 }
-
