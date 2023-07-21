@@ -9,11 +9,11 @@ class ScreenContainer extends StatelessWidget {
     return SafeArea(
       child: Scaffold(
 
-        appBar: AppBar(
-          leading: BackButton(
-            onPressed: () {},
-          ),
-        ),
+        // appBar: AppBar(
+        //   leading: BackButton(
+        //     onPressed: () {},
+        //   ),
+        // ),
         body: SingleChildScrollView(child: body)
       ),
     );

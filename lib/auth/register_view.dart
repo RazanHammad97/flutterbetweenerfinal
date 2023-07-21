@@ -36,7 +36,7 @@ class RegisterView extends StatelessWidget {
         CustomButton(onPressed: () {
           AuthServices().register("name", "email3@test.net", "test", "test");
         }, "REGISTER"),
-        const CustomText(title: "-  or  -", topPadding: 24),
+         CustomText(title: "-  or  -", topPadding: 24),
       ],
     ));
   }
