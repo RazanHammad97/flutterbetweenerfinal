@@ -7,6 +7,8 @@ import 'package:projectbetweener/features/home/widgets/home_icons.dart';
 import 'auth/register_view.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+import 'features/profile/profile_view.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -32,12 +34,13 @@ class MyApp extends StatelessWidget {
             textTheme: Typography.englishLike2018.apply(fontSizeFactor: 1.sp),
             scaffoldBackgroundColor: Colors.white,
           ),
-          home: const HomeView(),
+          home: const ProfileView(),
           routes: {
             RegisterView.id: (context) => const RegisterView(),
             LoginView.id: (context) => const LoginView(),
             OnBoradingView.id: (context) => const OnBoradingView(),
             HomeView.id: (context) => const HomeView(),
+            ProfileView.id :(context) => const ProfileView(),
           },
         );
       },
