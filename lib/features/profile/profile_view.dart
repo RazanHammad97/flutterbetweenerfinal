@@ -10,16 +10,15 @@ class ProfileView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScreenContainer(
-      body: Column(
-        children: [
+      body:  [
           CustomText(
             title: "Profile",
             alignValue: Alignment.center,
-            fontSize: 36.sp,
+            fontSize: 24.sp,
             color: Colors.black,
           ),
         ],
-      ),
+
     );
   }
 }

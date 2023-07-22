@@ -14,8 +14,7 @@ class HomeView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScreenContainer(
-        body: Column(
-      children: [
+        body:  [
         HomeIcons(),
         CustomText(
           title: "Hi, Razan!",
@@ -37,6 +36,6 @@ class HomeView extends StatelessWidget {
           ],),
         )
       ],
-    ));
+    );
   }
 }
