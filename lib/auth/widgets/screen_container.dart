@@ -6,16 +6,18 @@ class ScreenContainer extends StatelessWidget {
       {required this.body,
       this.leftPadding = 0,
       this.rightPadding = 0,
+        this.customFloatButton,
       Key? key})
       : super(key: key);
   List<Widget> body;
   double leftPadding;
   double rightPadding;
-
+  Widget? customFloatButton;
   @override
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        floatingActionButton: customFloatButton,
 
           // appBar: AppBar(
           //   leading: BackButton(
