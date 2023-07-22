@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:projectbetweener/auth/login_view.dart';
-import 'package:projectbetweener/auth/on_boarding.dart';
+
 import 'package:projectbetweener/core/util/general_services.dart';
 import 'package:projectbetweener/features/active-sharing/active_sharing_view.dart';
 import 'package:projectbetweener/features/home/home_view.dart';
 import 'package:projectbetweener/features/home/widgets/home_icons.dart';
-import 'auth/register_view.dart';
+
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+import 'features/auth/login_view.dart';
+import 'features/auth/on_boarding.dart';
+import 'features/auth/register_view.dart';
 import 'features/profile/profile_view.dart';
 
 void main() {

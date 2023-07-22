@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:projectbetweener/auth/services/auth_services.dart';
-import 'package:projectbetweener/auth/widgets/custom_button.dart';
-import 'package:projectbetweener/auth/widgets/custom_image_widget.dart';
-import 'package:projectbetweener/auth/widgets/custom_text_widget.dart';
-import 'package:projectbetweener/auth/widgets/input_text_widget.dart';
-import 'package:projectbetweener/auth/widgets/screen_container.dart';
+import 'package:projectbetweener/features/auth/services/auth_services.dart';
+import 'package:projectbetweener/features/auth/widgets/custom_button.dart';
+import 'package:projectbetweener/features/auth/widgets/custom_image_widget.dart';
+import 'package:projectbetweener/features/auth/widgets/custom_text_widget.dart';
+import 'package:projectbetweener/features/auth/widgets/input_text_widget.dart';
+import 'package:projectbetweener/features/auth/widgets/screen_container.dart';
 
-import '../core/constants.dart';
+import '../../core/constants.dart';
+
 
 class RegisterView extends StatelessWidget {
   static String id = "/register_view";

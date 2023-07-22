@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:projectbetweener/auth/widgets/custom_text_widget.dart';
+
+import '../../auth/widgets/custom_text_widget.dart';
+
 
 class SocialContainer extends StatelessWidget {
   SocialContainer({required this.title, required this.userName,this.color, Key? key})

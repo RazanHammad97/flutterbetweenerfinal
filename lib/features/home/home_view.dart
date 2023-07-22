@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:projectbetweener/auth/widgets/custom_text_widget.dart';
-import 'package:projectbetweener/auth/widgets/screen_container.dart';
+
 import 'package:projectbetweener/features/home/widgets/home_icons.dart';
 import 'package:projectbetweener/features/home/widgets/social_container.dart';
 
-import '../../auth/widgets/custom_image_widget.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import '../auth/widgets/custom_image_widget.dart';
+import '../auth/widgets/custom_text_widget.dart';
+import '../auth/widgets/screen_container.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({Key? key}) : super(key: key);

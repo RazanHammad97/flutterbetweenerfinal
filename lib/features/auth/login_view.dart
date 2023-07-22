@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:projectbetweener/auth/widgets/custom_button.dart';
-import 'package:projectbetweener/auth/widgets/custom_image_widget.dart';
-import 'package:projectbetweener/auth/widgets/custom_social_button.dart';
-import 'package:projectbetweener/auth/widgets/custom_text_widget.dart';
-import 'package:projectbetweener/auth/widgets/input_text_widget.dart';
-import 'package:projectbetweener/auth/widgets/screen_container.dart';
+import 'package:projectbetweener/features/auth/widgets/custom_button.dart';
+import 'package:projectbetweener/features/auth/widgets/custom_image_widget.dart';
+import 'package:projectbetweener/features/auth/widgets/custom_social_button.dart';
+import 'package:projectbetweener/features/auth/widgets/custom_text_widget.dart';
+import 'package:projectbetweener/features/auth/widgets/input_text_widget.dart';
+import 'package:projectbetweener/features/auth/widgets/screen_container.dart';
+
 
 class LoginView extends StatelessWidget {
   const LoginView({Key? key}) : super(key: key);

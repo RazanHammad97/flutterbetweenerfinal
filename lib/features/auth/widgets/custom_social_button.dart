@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:projectbetweener/auth/widgets/custom_image_widget.dart';
+
 import 'package:projectbetweener/core/util/general_services.dart';
+
+import 'custom_image_widget.dart';
 
 class CustomSocialButton extends StatelessWidget {
   CustomSocialButton(
