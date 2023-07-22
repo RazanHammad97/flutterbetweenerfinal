@@ -19,8 +19,7 @@ class RegisterView extends StatelessWidget {
     TextEditingController _emailController = TextEditingController();
     TextEditingController _passController = TextEditingController();
     return ScreenContainer(
-        body: Column(
-      children: [
+        body: [
         CustomImage("${imagePath}img.png", 154, 92),
         InputText(_nameController, "John Doe", "Name"),
         InputText(
@@ -38,6 +37,6 @@ class RegisterView extends StatelessWidget {
         }, "REGISTER"),
          CustomText(title: "-  or  -", topPadding: 24),
       ],
-    ));
+    );
   }
 }

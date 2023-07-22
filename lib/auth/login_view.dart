@@ -15,8 +15,7 @@ class LoginView extends StatelessWidget {
     TextEditingController _emailController = TextEditingController();
     TextEditingController _passController = TextEditingController();
     return ScreenContainer(
-        body: Column(
-      children: [
+        body:[
         const CustomImage("assets/images/img.png", 254, 152),
         InputText(
           _emailController,
@@ -36,8 +35,7 @@ class LoginView extends StatelessWidget {
         CustomSocialButton(
           title: "Sign In With Google".toUpperCase(),
           color: Colors.red,
-        )
-      ],
-    ));
+        )]
+     );
   }
 }

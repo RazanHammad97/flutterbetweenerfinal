@@ -11,18 +11,14 @@ class OnBoradingView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScreenContainer(
-        body: Padding(
-      padding: const EdgeInsets.only(left: 48.0, right: 48, top: 48),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          CustomImage("assets/images/onboardimg.png", 251.w, 254.h),
-          CustomButton(
-            "get started".toUpperCase(),
-            onPressed: () {},
-          )
-        ],
-      ),
-    ));
+        leftPadding: 48,
+        rightPadding: 48,
+        body: [
+      CustomImage("assets/images/onboardimg.png", 251.w, 254.h),
+      CustomButton(
+        "get started".toUpperCase(),
+        onPressed: () {},
+      )
+    ]);
   }
 }
