@@ -37,7 +37,7 @@ class MyApp extends StatelessWidget {
             textTheme: Typography.englishLike2018.apply(fontSizeFactor: 1.sp),
             scaffoldBackgroundColor: Colors.white,
           ),
-          home: const ActiveSharingView(),
+          home: const RegisterView(),
           routes: {
             RegisterView.id: (context) => const RegisterView(),
             LoginView.id: (context) => const LoginView(),
