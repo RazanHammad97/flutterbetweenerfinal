@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:projectbetweener/auth/widgets/custom_image_widget.dart';
+
+import '../../auth/widgets/custom_image_widget.dart';
+
 
 class HomeIcons extends StatelessWidget {
   const HomeIcons({Key? key}) : super(key: key);

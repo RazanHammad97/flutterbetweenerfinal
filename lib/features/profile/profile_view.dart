@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:projectbetweener/auth/widgets/custom_text_widget.dart';
-import 'package:projectbetweener/auth/widgets/screen_container.dart';
+
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:projectbetweener/features/profile/widgets/custom_floating_botton.dart';
 import 'package:projectbetweener/features/profile/widgets/custom_profile_container_widget.dart';
 import 'package:projectbetweener/features/profile/widgets/custom_profile_link_widget.dart';
+
+import '../auth/widgets/custom_text_widget.dart';
+import '../auth/widgets/screen_container.dart';
 
 class ProfileView extends StatelessWidget {
   const ProfileView({Key? key}) : super(key: key);
@@ -13,7 +15,9 @@ class ProfileView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScreenContainer(
-      customFloatButton: CustomFloatingButton(onPressed: (){},),
+      customFloatButton: CustomFloatingButton(
+        onPressed: () {},
+      ),
       body: [
         CustomText(
           title: "Profile",
@@ -46,8 +50,6 @@ class ProfileView extends StatelessWidget {
             )
           ],
         ),
-
-
       ],
     );
   }

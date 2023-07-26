@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:projectbetweener/auth/widgets/custom_text_widget.dart';
+
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import '../../auth/widgets/custom_text_widget.dart';
 
 class ProfileLink extends StatelessWidget {
   ProfileLink({
