@@ -6,6 +6,8 @@ import 'package:projectbetweener/features/home/home_view.dart';
 import 'package:projectbetweener/features/home/widgets/home_icons.dart';
 
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:projectbetweener/features/links/add_link_view.dart';
+import 'package:projectbetweener/features/links/edit_link_view.dart';
 
 import 'features/auth/login_view.dart';
 import 'features/auth/on_boarding.dart';
@@ -38,7 +40,7 @@ class MyApp extends StatelessWidget {
             textTheme: Typography.englishLike2018.apply(fontSizeFactor: 1.sp),
             scaffoldBackgroundColor: Colors.white,
           ),
-          home: const FriendProfileView(),
+          home: const EditLinkView(),
           routes: {
             RegisterView.id: (context) => const RegisterView(),
             LoginView.id: (context) => const LoginView(),
@@ -47,6 +49,8 @@ class MyApp extends StatelessWidget {
             ProfileView.id :(context) => const ProfileView(),
             ActiveSharingView.id: (context)=>const ActiveSharingView(),
             FriendProfileView.id: (context)=>const FriendProfileView(),
+            AddLinkView.id: (context)=>const AddLinkView(),
+            EditLinkView.id: (context)=>const EditLinkView(),
           },
         );
       },
