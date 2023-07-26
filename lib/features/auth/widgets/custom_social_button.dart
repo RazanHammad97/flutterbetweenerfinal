@@ -31,7 +31,8 @@ class CustomSocialButton extends StatelessWidget {
                 borderRadius: BorderRadius.circular(12),
               ),
             ),
-          ),
+            ),
+
           onPressed: onPressed,
           child: Row(
             children: [

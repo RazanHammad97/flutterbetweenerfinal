@@ -37,7 +37,7 @@ class RegisterView extends StatelessWidget {
           AuthServices().register("name", "email3@test.net", "test", "test");
         }, "REGISTER"),
         CustomText(title: "-  or  -", topPadding: 24),
-        CustomSocialButton(title: "Sign In With Google"),
+        CustomSocialButton(title: "Sign In With Google",onPressed: (){},),
       ],
     );
   }

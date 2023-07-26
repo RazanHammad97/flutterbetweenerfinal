@@ -6,6 +6,8 @@ class FriendProfileView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ScreenContainer(body: []);
+    return ScreenContainer(body: [
+
+    ]);
   }
 }

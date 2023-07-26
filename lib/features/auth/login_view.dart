@@ -36,6 +36,7 @@ class LoginView extends StatelessWidget {
         CustomSocialButton(
           title: "Sign In With Google".toUpperCase(),
           color: Colors.red,
+          onPressed: (){},
         )]
      );
   }

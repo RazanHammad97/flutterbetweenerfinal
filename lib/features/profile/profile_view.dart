@@ -15,7 +15,9 @@ class ProfileView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScreenContainer(
-      customFloatButton: CustomFloatingButton(onPressed: (){},),
+      customFloatButton: CustomFloatingButton(
+        onPressed: () {},
+      ),
       body: [
         CustomText(
           title: "Profile",
@@ -48,8 +50,6 @@ class ProfileView extends StatelessWidget {
             )
           ],
         ),
-
-
       ],
     );
   }
